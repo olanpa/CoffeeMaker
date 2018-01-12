@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+div.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%; }
+
+body {
+  overflow-x: hidden; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 3px auto;
+  background: url("../img/logo.png") 31px 24px no-repeat, url(../img/bg-1.png) 0 33vw no-repeat, linear-gradient(to bottom, transparent 42vw, #efefef 33vw), url(../img/Program_Beginning.jpg) 0 0 no-repeat;
+  background-size: 230px auto, 100vw auto, auto, 100vw auto;
+  min-height: 300vw; }
+  .wrapper a {
+    text-decoration: none;
+    color: inherit; }
+  .wrapper header {
+    min-height: 200px;
+    width: 100%;
+    position: relative; }
+    .wrapper header .row:first-of-type {
+      height: 100px; }
+      .wrapper header .row:first-of-type hr {
+        border-top: 1px solid grey;
+        position: absolute;
+        width: 25px;
+        top: 85px; }
+        .wrapper header .row:first-of-type hr.lineLong {
+          width: 315%;
+          left: 280px; }
+      .wrapper header .row:first-of-type .col-7 {
+        height: 100px;
+        padding: 0; }
+  .wrapper ul {
+    list-style: none;
+    width: 100%;
+    height: 100px;
+    text-align: right; }
+    .wrapper ul li {
+      position: relative;
+      text-transform: uppercase;
+      display: inline-block;
+      width: 18%;
+      height: 100px;
+      text-align: center;
+      padding-top: 44px;
+      color: white;
+      font: 0.6vw "Roboto", sans-serif;
+      font-weight: 900;
+      text-transform: uppercase; }
+      .wrapper ul li:not(:last-of-type)::after {
+        content: ' ';
+        width: 0.3vw;
+        height: 0.3vw;
+        border-radius: 0.15vw;
+        background-color: white;
+        position: absolute;
+        top: calc(50px - 0.3vw);
+        right: -5px; }
+      .wrapper ul li:hover a {
+        color: #eab96a; }
+      .wrapper ul li:hover::before {
+        content: ' ';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid #eab96a; }
+  .wrapper p.phoneNum {
+    color: white;
+    font: 1.5vw "Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .wrapper article {
+    height: calc(42vw - 100px);
+    color: white;
+    text-align: center; }
+    .wrapper article i.material-icons {
+      color: #eab96a;
+      font-size: 18px;
+      margin-bottom: 30px; }
+    .wrapper article .article {
+      font: 18px Georgia;
+      color: white; }
+    .wrapper article img {
+      margin: 0 33px; }
+      .wrapper article img.right {
+        transform: rotate(180deg); }
+    .wrapper article h1 {
+      text-transform: uppercase;
+      font: 3.3vw 'Roboto', sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.33vw;
+      margin: 30px; }
+      .wrapper article h1 span {
+        color: #eab96a; }
+    .wrapper article p.article {
+      font-size: 21px;
+      margin-bottom: 30px; }
+    .wrapper article span.circle {
+      width: 9px;
+      height: 9px;
+      border-radius: 4.5px;
+      background-color: #eab96a;
+      display: inline-block; }
+      .wrapper article span.circle.arrowDown {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: #fefefe;
+        padding: 20px;
+        margin: 70px 0 70px; }
+        .wrapper article span.circle.arrowDown i {
+          margin: 0;
+          font-size: 20px; }
+  .wrapper h2 {
+    color: white;
+    font: 2.6vw "Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    letter-spacing: 0.26vw;
+    margin: 0 auto 45px; }
+  .wrapper #programs {
+    position: relative;
+    margin-top: 100px;
+    min-height: 100vw; }
+    .wrapper #programs p.explain {
+      font: 0.85vw Georgia;
+      color: #485260;
+      margin: 15px auto;
+      text-align: center; }
+    .wrapper #programs ul.programPrices {
+      text-align: center;
+      border-bottom: 2px solid #adadad; }
+      .wrapper #programs ul.programPrices li {
+        color: black;
+        width: 30%;
+        font-size: 21px;
+        letter-spacing: 1px; }
+        .wrapper #programs ul.programPrices li::before {
+          border-bottom-color: black;
+          bottom: 0;
+          z-index: 10; }
+        .wrapper #programs ul.programPrices li:not(:last-of-type)::after {
+          width: 0px;
+          height: 0px;
+          border-radius: 0px;
+          background-color: transparent; }

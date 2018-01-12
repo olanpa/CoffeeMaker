@@ -1,0 +1,24 @@
+{
+  "name": "coffemaker",
+  "version": "1.0.0",
+  "description": "the 5th site to portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "olanpa"
+  },
+  "keywords": [
+    "coffee",
+    "site"
+  ],
+  "author": "OlhaP",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

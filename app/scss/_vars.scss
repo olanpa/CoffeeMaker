@@ -1,0 +1,19 @@
+$bgcolor : #ececec;
+$lineColor:#eab96a;
+$circleColor:#fefefe;
+$text-gray:#485260;
+$text-light-gray:#adadad;
+$text-dark-gray:#2b2b2b;
+$text-shadow:#dddddd;
+@mixin fontWhite($font){
+  color:white;
+  font: $font 'Roboto', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@mixin circle($size, $circle-color){
+  width: $size;
+  height:$size;
+  border-radius: $size / 2;
+  background-color: $circle-color;
+}

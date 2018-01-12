@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+@import "reset";
+@import "main";
+@import "vars";
+//.container{
+//  outline: 1px solid greenyellow;
+//}
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 3px auto;
+  background: url("../img/logo.png") 31px 24px no-repeat,
+  url(../img/bg-1.png) 0 33vw no-repeat,
+  linear-gradient(to bottom, transparent 42vw, #efefef 33vw),
+  url(../img/Program_Beginning.jpg) 0 0 no-repeat;
+
+  background-size: 230px auto, 100vw auto, auto, 100vw auto;
+  min-height: 300vw;
+  //height:1px;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  header {
+    min-height: 200px;
+    width: 100%;
+    position:relative;
+    .row:first-of-type {
+      height: 100px;
+      hr {
+        border-top: 1px solid grey;
+        position: absolute;
+        width: 25px;
+        top: 85px;
+        &.lineLong {
+          width: 315%;
+          left: 280px;
+        }
+      }
+      .col-7 {
+        height: 100px;
+        padding: 0;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    width: 100%;
+    height: 100px;
+    text-align: right;
+    li {
+      position: relative;
+      text-transform: uppercase;
+      display: inline-block;
+      width: 18%;
+      height: 100px;
+      text-align: center;
+      padding-top: 44px;
+      @include fontWhite(0.6vw);
+      &:not(:last-of-type)::after {
+        content: ' ';
+        @include circle(0.3vw, white);
+        position: absolute;
+        top: calc(50px - 0.3vw);
+        right: -5px;
+      }
+      &:hover {
+        a {
+          color: $lineColor;
+        }
+        &::before {
+          content: ' ';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 100%;
+          border-bottom: 2px solid $lineColor;
+        }
+      }
+    }
+  }
+  p.phoneNum {
+    @include fontWhite(1.5vw);
+    text-decoration: none;
+  }
+  article {
+    height: calc(42vw - 100px);
+    color: white;
+    text-align: center;
+    i.material-icons {
+      color: $lineColor;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .article {
+      font: 18px Georgia;
+      color: white;
+    }
+    img {
+      margin: 0 33px;
+      &.right {
+        transform: rotate(180deg);
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+      font: 3.3vw 'Roboto', sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.33vw;
+      margin: 30px;
+      span {
+        color: $lineColor;
+      }
+    }
+    p.article {
+      font-size: 21px;
+      margin-bottom: 30px;
+    }
+    span.circle {
+      @include circle(9px, $lineColor);
+      display: inline-block;
+      &.arrowDown {
+        @include circle(60px, rgba(0, 0, 0, 0));
+        border: 1px solid white;
+        color: $circleColor;
+        padding: 20px;
+        margin: 70px 0 70px;
+        i {
+          margin: 0;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  h2 {
+    @include fontWhite(2.6vw);
+    color: black;
+    text-align: center;
+    letter-spacing: 0.26vw;
+    margin: 0 auto 45px;
+  }
+  #programs {
+    position: relative;
+    margin-top: 100px;
+    min-height: 100vw;
+    p.explain {
+      font: 0.85vw Georgia;
+      color: $text-gray;
+      margin: 15px auto;
+      text-align: center;
+    }
+    ul.programPrices {
+      text-align: center;
+      border-bottom: 2px solid $text-light-gray;
+      li {
+        color: black;
+        width:30%;
+        font-size: 21px;
+        letter-spacing: 1px;
+        &::before {
+          border-bottom-color: black;
+          bottom:0;
+          z-index: 10;
+        }
+        &:not(:last-of-type)::after {
+          @include circle(0px, transparent);
+        }
+      }
+    }
+  }
+}
+
