@@ -1,0 +1,14 @@
+body {
+  background-color: rgba(150, 150, 150, 0.3); }
+
+.center {
+  width: 100%; }
+
+.gallery-slides {
+  width: 50vw;
+  margin: -2vw;
+  background-color: rgba(150, 10, 150, 0.3); }
+  .gallery-slides img {
+    width: 30vw;
+    height: auto;
+    margin: 0 auto; }

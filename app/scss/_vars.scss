@@ -1,12 +1,24 @@
-$bgcolor : #ececec;
+//$bgcolor : #ececec;
+$brownColor: #222121;
 $lineColor:#eab96a;
 $circleColor:#fefefe;
 $text-gray:#485260;
 $text-light-gray:#adadad;
 $text-dark-gray:#2b2b2b;
 $text-shadow:#dddddd;
+$logoHeight: 100px;
+$marginSection: 45px;
+$font10px:10px;
+$grayLine:#939393;
+$infoTextGray:#485260;
 @mixin fontWhite($font){
   color:white;
+  font: $font 'Roboto', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@mixin fontBlack($font){
+  color:black;
   font: $font 'Roboto', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -16,4 +28,23 @@ $text-shadow:#dddddd;
   height:$size;
   border-radius: $size / 2;
   background-color: $circle-color;
+}
+@mixin decoHeaderLeft($left, $top){
+  position: absolute;
+  background: url(../img/decoLines_sprites.png) 100% 0 no-repeat;
+  background-size:auto 100%;
+  border:none;
+  width:2.6vmax;
+  height:2vmax;
+  left: $left;
+  top: $top;
+}
+@mixin decoHeaderRight($right, $top){
+  position: absolute;
+  background: url(../img/decoLines_sprites.png) 0 0 no-repeat;
+  background-size:auto 100%;
+  width:2.6vmax;
+  height:2vmax;
+  right: $right;
+  top: $top;
 }

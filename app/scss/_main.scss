@@ -1,6 +1,27 @@
-div.container{
-  margin:0;
-  padding:0;
-  width:100%;
-  max-width: 100%;
+span.glyphicon-star {
+  margin: 10px;
+  color: $lineColor;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+#testimonials a.carousel-control.left, #testimonials a.carousel-control.right {
+  background-image: none;
+  background-color: transparent;
+  text-align: left;
+  color: black;
+  i.material-icons {
+    text-shadow: none;
+    font-size: 18px;
+  }
+}
+
+#testimonials {
+  a.carousel-control.right {
+    text-align: right;
+  }
+  div.item {
+    text-align: center;
+    height: 100%;
+  }
 }

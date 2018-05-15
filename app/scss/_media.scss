@@ -1,0 +1,22 @@
+@media all and (max-width: 992px) {
+  #upBG{
+    background-size: auto 100%;
+  }
+  #professionalSchool p.center {
+    text-align: center;
+  }
+  ul:not(.simple) li{
+    font-size: 1.1vmax;
+  }
+}
+@media screen and (max-width: 767px){
+  img[alt='decor']{
+    display: none;
+  }
+  p.phoneNum{
+    height:30px;
+    text-align: right;
+    padding:10px 10px 0;
+    font-size: 1.5vmax;
+  }
+}

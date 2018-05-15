@@ -1,0 +1,31 @@
+.slick-prev, .slick-next {
+  position: absolute;
+  color: transparent;
+  border:none;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border: none;
+  z-index: 10;
+
+}
+
+.slick-prev{
+  left: -20px;
+  &:before {
+  content: '<';
+  color: black;
+  position: absolute;
+}
+}
+
+.slick-next {
+  right:20px;
+}
+
+.slick-next:before {
+  content: '>';
+  color: black;
+  position: absolute;
+  right: -20px;
+}
